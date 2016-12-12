@@ -1,0 +1,24 @@
+@(menus: java.util.List[Menu])
+
+<html>
+<head>
+<body>
+	<table cellspacing="1"  border="2px">
+		    <tr>
+		    	<th >NOMBRE</th>
+		    	<th>TIPO</th>
+		    	<th >INGREDIENTES</th>
+		    	<th >PRECIO</th>		    	
+		    </tr>
+			@for(menu <- menus) {		   
+			  <tr>
+			      <td>@menu.nombre</td>
+			      <td>@menu.tipo</td>
+			      <td>@menu.precio</td>
+			      <td>@menu.ingrediente</td>
+		      </tr>	
+		      }
+		 </table>
+</body>
+</head>
+</html>
